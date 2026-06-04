@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Bloom & Root Garden Shop">
+  <title>About | Bloom & Root Garden Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Bloom &amp; <span>Root</span></a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu" id="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html" class="cart-link">Cart <span id="cart-count" class="cart-badge">0</span></a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="container about-content">
+      <h1 class="section-title">About Bloom &amp; Root</h1>
+
+      <p>Bloom &amp; Root Garden Shop is a full-stack e-commerce website developed as a Continuous Assessment project for the <strong>Web Development</strong> module on the <strong>H.Dip. in Computing</strong> programme at <strong>CCT College Dublin</strong>.</p>
+
+      <h2>Purpose</h2>
+      <p>The site demonstrates a simple online garden shop where customers can browse plants, pots and tools, manage a shopping cart, and complete checkout. Product data, prices and cart state are managed dynamically through a Node.js server connected to an SQLite database.</p>
+
+      <h2>Technologies</h2>
+      <ul>
+        <li>HTML5 — semantic structure and accessible markup</li>
+        <li>CSS3 — responsive layout and styling</li>
+        <li>JavaScript — dynamic UI, API integration and form validation</li>
+        <li>Node.js &amp; Express.js — REST API and static file serving</li>
+        <li>SQLite (sql.js) — products, cart, orders and market rate storage</li>
+      </ul>
+
+      <h2>Accessibility &amp; Responsive Design</h2>
+      <p>This website uses semantic HTML elements (<code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>footer</code>), skip navigation links, ARIA labels where helpful, and a responsive layout that works on mobile and desktop screens.</p>
+
+      <h2>Features</h2>
+      <ul>
+        <li>Dynamic product loading from database via API</li>
+        <li>Server-managed shopping cart (add, update, remove)</li>
+        <li>Market rate price multiplier</li>
+        <li>Checkout with client and server validation</li>
+        <li>Order confirmation and database persistence</li>
+      </ul>
+
+      <p style="margin-top: 2rem;">
+        <a href="products.html" class="btn btn--primary">Start Shopping</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Bloom &amp; Root Garden Shop. CCT College Dublin — Web Development CA.</p>
+      <p>Student: [FULL NAME] | ID: [STUDENT ID]</p>
+    </div>
+  </footer>
+</body>
+</html>

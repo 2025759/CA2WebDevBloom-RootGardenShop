@@ -183,7 +183,7 @@ app.post('/api/market-rate', (req, res) => {
 
 app.get('*', (req, res, next) => {
   if (req.path.startsWith('/api')) return next();
-  res.status(404).send('Page not found — HTML pages coming in the next step.');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 db.initDatabase()

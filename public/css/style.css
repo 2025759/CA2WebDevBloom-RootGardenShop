@@ -1,0 +1,356 @@
+/* Bloom & Root Garden Shop — minimal layout CSS (Commit 3) */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.6;
+  color: #2d3a2e;
+  background: #faf7f2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #3d6b4f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: #3d6b4f;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+/* Header & nav */
+.site-header {
+  background: #3d6b4f;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #c8e6c9;
+}
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 2px solid #c8e6c9;
+  color: #fff;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.nav-menu a {
+  color: #e8f5e9;
+  text-decoration: none;
+  padding: 0.25rem 0;
+}
+
+.nav-menu a.active {
+  border-bottom: 2px solid #c8e6c9;
+  color: #fff;
+}
+
+.cart-badge {
+  background: #8d6e63;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  margin-left: 0.25rem;
+}
+
+/* Main sections */
+main {
+  flex: 1;
+}
+
+.hero {
+  background: #5a8f6a;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1.25rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  max-width: 560px;
+  margin: 0 auto 1.5rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #2d4a35;
+}
+
+.section-subtitle {
+  color: #5c6b5e;
+  margin-bottom: 1.5rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.info-card {
+  background: #fff;
+  border: 1px solid #d4cfc4;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.info-card h3 {
+  color: #3d6b4f;
+  margin-bottom: 0.5rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters-bar input,
+.filters-bar select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #c5bdb0;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.market-rate-panel {
+  background: #eef5ef;
+  border: 1px solid #b8cdb9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.market-rate-panel form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.cart-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #d4cfc4;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.cart-summary {
+  max-width: 320px;
+  margin-left: auto;
+  background: #fff;
+  border: 1px solid #d4cfc4;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.cart-summary dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-form {
+  max-width: 520px;
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #c5bdb0;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.about-content h2 {
+  margin: 1.5rem 0 0.5rem;
+  color: #3d6b4f;
+}
+
+.about-content ul {
+  margin-left: 1.25rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.btn--primary {
+  background: #3d6b4f;
+  color: #fff;
+}
+
+.btn--secondary {
+  background: #8d6e63;
+  color: #fff;
+}
+
+.btn--sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.9rem;
+}
+
+.empty-msg {
+  color: #5c6b5e;
+  padding: 1rem 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.site-footer {
+  background: #2d4a35;
+  color: #e8f5e9;
+  text-align: center;
+  padding: 1.25rem;
+  margin-top: auto;
+}
+
+.footer-inner p + p {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* Mobile nav */
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #2d4a35;
+    padding: 1rem 1.25rem;
+    gap: 0.75rem;
+  }
+
+  .nav-menu.is-open {
+    display: flex;
+  }
+
+  .site-header {
+    position: relative;
+  }
+}

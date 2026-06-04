@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout at Bloom & Root Garden Shop">
+  <title>Checkout | Bloom & Root Garden Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Bloom &amp; <span>Root</span></a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu" id="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html" class="cart-link">Cart <span id="cart-count" class="cart-badge">0</span></a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="container">
+      <h1 class="section-title">Checkout</h1>
+      <p class="section-subtitle">Complete your order below. All fields marked with * are required.</p>
+
+      <div id="checkout-errors" class="form-errors hidden" role="alert" aria-live="assertive"></div>
+      <div id="order-confirmation" class="hidden" role="status" aria-live="polite"></div>
+
+      <form id="checkout-form" class="checkout-form" novalidate>
+        <div class="form-group">
+          <label for="customer_name">Full name *</label>
+          <input type="text" id="customer_name" name="customer_name" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="e.g. 087 123 4567">
+        </div>
+        <div class="form-group">
+          <label for="address">Address *</label>
+          <input type="text" id="address" name="address" required autocomplete="street-address">
+        </div>
+        <div class="form-group">
+          <label for="city">City *</label>
+          <input type="text" id="city" name="city" required autocomplete="address-level2">
+        </div>
+        <div class="form-group">
+          <label for="eircode">Eircode *</label>
+          <input type="text" id="eircode" name="eircode" required autocomplete="postal-code" placeholder="e.g. D02 XY45">
+        </div>
+        <div class="form-group">
+          <label for="card_name">Name on card *</label>
+          <input type="text" id="card_name" name="card_name" required autocomplete="cc-name">
+        </div>
+        <div class="form-group">
+          <label for="card_number">Card number *</label>
+          <input type="text" id="card_number" name="card_number" required inputmode="numeric" autocomplete="cc-number" placeholder="13–19 digits" maxlength="19">
+        </div>
+        <button type="submit" class="btn btn--primary" style="width:100%">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Bloom &amp; Root Garden Shop. Demo checkout — no real payment processed.</p>
+    </div>
+  </footer>
+</body>
+</html>
