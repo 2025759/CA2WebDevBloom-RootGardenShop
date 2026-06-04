@@ -3,7 +3,7 @@
 Web Development CA — H.Dip. in Computing, CCT College Dublin
 
 **Student ID:** 2025759  
-**Name:** [FULL NAME]
+**Name:** Aksa Duarte Ramos
 
 ## Links
 
