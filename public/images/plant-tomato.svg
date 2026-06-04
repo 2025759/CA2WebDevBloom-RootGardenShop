@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160" role="img" aria-label="Tomato seedlings">
+  <rect width="200" height="160" fill="#fff8e1"/>
+  <rect x="55" y="110" width="90" height="28" rx="4" fill="#6d4c41"/>
+  <line x1="75" y1="110" x2="75" y2="70" stroke="#388e3c" stroke-width="3"/>
+  <line x1="100" y1="110" x2="100" y2="65" stroke="#43a047" stroke-width="3"/>
+  <line x1="125" y1="110" x2="125" y2="72" stroke="#388e3c" stroke-width="3"/>
+  <circle cx="75" cy="62" r="10" fill="#e53935"/>
+  <circle cx="100" cy="58" r="11" fill="#f44336"/>
+  <circle cx="125" cy="64" r="9" fill="#e53935"/>
+</svg>

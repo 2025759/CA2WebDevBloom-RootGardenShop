@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160" role="img" aria-label="Terracotta pots">
+  <rect width="200" height="160" fill="#faf7f2"/>
+  <path d="M55 120 L50 95 L75 90 L80 120 Z" fill="#bf360c"/>
+  <path d="M85 115 L80 75 L110 70 L115 115 Z" fill="#d84315"/>
+  <path d="M120 120 L115 85 L145 80 L150 120 Z" fill="#e64a19"/>
+  <ellipse cx="67" cy="90" rx="14" ry="4" fill="#a33e0b"/>
+  <ellipse cx="97" cy="72" rx="16" ry="4" fill="#a33e0b"/>
+  <ellipse cx="132" cy="82" rx="16" ry="4" fill="#a33e0b"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160" role="img" aria-label="Snake plant">
+  <rect width="200" height="160" fill="#e8f5e9"/>
+  <rect x="70" y="100" width="60" height="35" rx="6" fill="#a1887f"/>
+  <rect x="88" y="45" width="10" height="60" fill="#558b2f" rx="2"/>
+  <rect x="102" y="50" width="10" height="55" fill="#689f38" rx="2"/>
+  <rect x="78" y="48" width="8" height="58" fill="#7cb342" rx="2"/>
+</svg>

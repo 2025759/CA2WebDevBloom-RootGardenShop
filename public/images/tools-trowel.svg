@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160" role="img" aria-label="Garden trowel">
+  <rect width="200" height="160" fill="#eceff1"/>
+  <rect x="55" y="40" width="12" height="75" rx="3" fill="#8d6e63"/>
+  <path d="M67 115 L95 130 L110 115 L67 115" fill="#b0bec5"/>
+  <ellipse cx="88" cy="128" rx="28" ry="8" fill="#90a4ae"/>
+  <rect x="115" y="42" width="10" height="72" rx="3" fill="#8d6e63"/>
+  <path d="M125 114 L148 128 L160 114 L125 114" fill="#b0bec5"/>
+</svg>
